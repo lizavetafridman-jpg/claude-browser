@@ -86,6 +86,12 @@ h3{font:400 24px/1.25 var(--serif);margin:0 0 4px;color:var(--accent)}
 .cover__bottom .sub{font-size:24px}
 .cover .page__top,.cover .page__foot{position:relative;z-index:1}
 .cover .page__foot{margin-top:auto}
+/* привет */
+.hello{display:flex;gap:24px;align-items:flex-start;margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+.hello img{width:150px;height:150px;flex:none;display:block}
+.hello__title{font:400 30px/1.2 var(--serif);color:var(--accent);margin-bottom:8px}
+.hello__text{color:var(--text);margin-bottom:8px}
+.hello__nick{font:12px var(--mono);color:var(--muted)}
 /* финал */
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 14px}
 .btns .btn{margin:0}
@@ -94,6 +100,8 @@ h3{font:400 24px/1.25 var(--serif);margin:0 0 4px;color:var(--accent)}
 .legal{font:11px/1.6 var(--mono);color:var(--muted);margin-top:auto;padding-top:24px;max-width:600px}
 @media screen and (max-width:840px){
   .cover{min-height:720px}
+  .hello{flex-direction:column}
+  .hello img{width:120px;height:120px}
   .cover h1{font-size:50px}
   .cover h1 .logo img{width:42px;height:42px}
   .cover__photo{height:470px;right:-110px;bottom:0}
@@ -159,6 +167,16 @@ h3{font:400 24px/1.25 var(--serif);margin:0 0 4px;color:var(--accent)}
         <li><span>Идеи и сценарии</span><span>2 промта</span></li>
         <li><span>Боли аудитории</span><span>1 промт</span></li>
       </ul>
+    </div>
+
+    <div class="hello">
+      <img src="img/liza-face.webp" alt="Лиза Фридман">
+      <div>
+        <p class="hello__title">Привет, я Лиза</p>
+        <p class="hello__text">4 года в графическом дизайне, 3 года — видеомейкер. А теперь собираю свою нейросистему: ИИ-агентов, которые полностью делают мой контент, ведут Telegram-канал и Instagram и сами всё публикуют, помогают семейному бизнесу и следят за моим здоровьем.</p>
+        <p class="hello__text">Эти промты я использую сама, когда разбираю свой блог. Забирай и пробуй.</p>
+        <p class="hello__nick">@fridmanlizaveta</p>
+      </div>
     </div>
   </div>
   <div class="page__foot"><a href="https://t.me/fridmanlizaveta" target="_blank" rel="noopener">t.me/fridmanlizaveta</a><span>02 / 08</span></div>
